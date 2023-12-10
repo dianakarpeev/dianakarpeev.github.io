@@ -105,7 +105,7 @@
 
 
     // clients logo slider
-    $('.client-logo-slider').slick({
+    $('.logo-slider').slick({
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
