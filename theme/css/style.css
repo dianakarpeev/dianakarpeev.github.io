@@ -44,7 +44,7 @@ p-lg, .paragraph-lg {
   font-size: 22px;
 }
 
-h1, h2, h3 {
+h1, h2 {
   color: var(--lightest-slate);
   font-family: var(--font-sans);
   line-height: 1.1;
@@ -54,6 +54,7 @@ h1, h2, h3 {
 
 .section-title {
   position: relative;
+  font-family: var(--font-mono);
 }
 
 h1, .h1 {
@@ -80,6 +81,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 22px;
+  font-family: var(--font-sans)
 }
 
 h5, .h5 {
@@ -217,9 +219,11 @@ a:hover {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 .section-title {
   margin-bottom: 50px;
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
+  color: var(--white)
 }
 
 .bg-cover {
