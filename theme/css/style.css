@@ -6,10 +6,28 @@
  */
 
 /*  typography */
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400");
+
+:root {
+  --dark-purple: #140D1A;
+  --purple: #1E102F;
+  --light-navy: #144158;
+  --dull-bue: #3B6B78;
+  --blue: #629498;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --white: #e6f1ff;
+
+  
+  --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
+  sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+}
+
 body {
   line-height: 1.2;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-mono);
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #4c4c4c;
@@ -20,7 +38,7 @@ p, .paragraph {
   color: #4c4c4c;
   font-size: 15px;
   line-height: 1.8;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-mono);
 }
 p-lg, .paragraph-lg {
   font-size: 22px;
@@ -28,7 +46,7 @@ p-lg, .paragraph-lg {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-sans);
   line-height: 1.2;
 }
 
@@ -69,7 +87,7 @@ h6, .h6 {
 /* Button style */
 .btn {
   font-size: 22px;
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-sans);
   text-transform: capitalize;
   padding: 16px 44px;
   border-radius: 5px;
@@ -195,7 +213,7 @@ a:hover {
 }
 .section-title {
   margin-bottom: 80px;
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-sans);
 }
 
 .bg-cover {
@@ -304,11 +322,11 @@ a:hover {
 }
 
 .font-secondary {
-  font-family: "Playfair Display", serif !important;
+  font-family: var(--font-mono) !important;
 }
 
 .font-tertiary {
-  font-family: "Playfair Display", serif !important;
+  font-family: var(--font-sans) !important;
 }
 
 .shadow {
@@ -412,7 +430,7 @@ textarea.form-control {
 }
 
 .navbar .nav-item .nav-link {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-sans);
   text-transform: uppercase;
   padding: 15px;
 }
@@ -713,7 +731,7 @@ blockquote {
   margin-bottom: 20px;
 }
 .content strong {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-sans);
   font-size: 22px;
   font-weight: normal;
   color: #000;
