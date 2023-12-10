@@ -52,6 +52,17 @@ h1, h2 {
   font-weight: bold;
 }
 
+/* Taken from Brittany Chiang at https://v4.brittanychiang.com */
+.section-title::before {
+  position: relative;
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  color: var(--blue);
+  font-family: var(--font-mono);
+  font-size: clamp(var(--fz-md),3vw,var(--fz-xl));
+}
+
 .section-title {
   position: relative;
   font-family: var(--font-mono);
@@ -148,6 +159,7 @@ h6, .h6 {
 body {
   background-color: var(--dark-purple);
   overflow-x: hidden;
+  counter-reset: section;
 }
 
 ::-moz-selection {
