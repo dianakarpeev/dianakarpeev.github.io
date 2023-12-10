@@ -30,12 +30,12 @@ body {
   font-family: var(--font-mono);
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
-  color: #4c4c4c;
+  color: var(--slate);
 }
 
 p, .paragraph {
   font-weight: 400;
-  color: #4c4c4c;
+  color: var(--dark-purple);
   font-size: 15px;
   line-height: 1.8;
   font-family: var(--font-mono);
@@ -44,10 +44,16 @@ p-lg, .paragraph-lg {
   font-size: 22px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #000;
+h1, h2, h3 {
+  color: var(--lightest-slate);
   font-family: var(--font-sans);
-  line-height: 1.2;
+  line-height: 1.1;
+  text-align: start;
+  font-weight: bold;
+}
+
+.section-title {
+  position: relative;
 }
 
 h1, .h1 {
@@ -138,7 +144,7 @@ h6, .h6 {
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--dark-purple);
   overflow-x: hidden;
 }
 
@@ -212,7 +218,7 @@ a:hover {
   padding-bottom: 80px;
 }
 .section-title {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   font-family: var(--font-sans);
 }
 
@@ -258,15 +264,19 @@ a:hover {
 }
 
 .text-color {
-  color: #4c4c4c;
+  color: var(--slate);
 }
 
 .text-dark {
-  color: #000 !important;
+  color: var(--slate) !important;
 }
 
 .text-light {
-  color: #999999 !important;
+  color: var(--lightest-slate) !important;
+}
+
+.text-white {
+  color: var(--white)
 }
 
 .mb-10 {
@@ -330,7 +340,7 @@ a:hover {
 }
 
 .shadow {
-  box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
+  box-shadow: none !important;
 }
 
 .bg-dark {
@@ -414,7 +424,7 @@ textarea.form-control {
   transition: 0.3s ease;
 }
 .navigation.nav-bg {
-  background-color: #41228e;
+  background-color: transparent;
   padding: 15px 100px;
 }
 @media (max-width: 991px) {
@@ -425,7 +435,7 @@ textarea.form-control {
 @media (max-width: 991px) {
   .navigation {
     padding: 20px;
-    background: #41228e;
+    background: transparent;
   }
 }
 
@@ -597,7 +607,7 @@ textarea.form-control {
   transition: 0.2s ease;
 }
 .hover-shadow:hover {
-  box-shadow: 0px 18px 40px 8px rgba(224, 241, 255, 0.54) !important;
+  box-shadow: none !important;
 }
 
 /* /service */
@@ -698,7 +708,7 @@ textarea.form-control {
 .shadow-down::before {
   position: absolute;
   content: "";
-  box-shadow: 0px 0px 80.75px 14.25px rgba(224, 241, 255, 0.34);
+  box-shadow: none;
   height: 100%;
   width: 100%;
   left: 0;
