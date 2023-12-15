@@ -68,6 +68,10 @@ h1, h2 {
   font-family: var(--font-mono);
 }
 
+.transition {
+  transition: width 0.5s ease-in-out;
+}
+
 h1, .h1 {
   font-size: 80px;
 }
@@ -133,7 +137,7 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #41228e;
+  background: var(--dull-bue);
   color: #fff;
 }
 .btn-primary:active {
@@ -230,6 +234,8 @@ a:hover {
 .section {
   padding-top: 80px;
   padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-title {
@@ -427,12 +433,12 @@ textarea.form-control {
   flex-wrap: wrap;
 }
 
-.competencies-cards {
+.skills-cards {
   display: flex;
   flex-wrap: wrap;
 }
 
-.competencies-cards .card {
+.skills-cards .card {
   flex: 0 0 calc(33.33% - 20px); 
   margin-right: 20px; 
   margin-bottom: 20px; 
@@ -497,17 +503,17 @@ textarea.form-control {
   color: #fff;
 }
 
-.hero-area {
+#home {
   padding: 300px 0 200px;
   position: relative;
 }
 @media (max-width: 7671px) {
-  .hero-area {
+  #home {
     padding: 250px 0 150px;
     overflow: hidden;
   }
 }
-.hero-area h1 {
+#home h1 {
   position: relative;
   z-index: 2;
 }
@@ -737,12 +743,6 @@ textarea.form-control {
   bottom: -50px;
 }
 
-/* /testimonial */
-/* footer */
-.footer-section {
-  padding-top: 200px;
-}
-
 .section-on-footer {
   margin-bottom: -250px;
 }
@@ -762,6 +762,10 @@ textarea.form-control {
 }
 
 /* /footer */
+.footer-container {
+  padding-top: 200px;
+}
+
 .card-lg {
   flex-direction: row-reverse;
   align-items: center;

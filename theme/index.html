@@ -13,7 +13,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>Kross - Creative Portfolio Template</title>
+  <title>Diana Karpeev</title>
 
   <!-- Mobile Specific Metas
   ================================================== -->
@@ -59,16 +59,19 @@
     <div class="collapse navbar-collapse text-center" id="navigation">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Skills</a>
+          <a class="nav-link" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Works</a>
+          <a class="nav-link" href="#technologies">Technologies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="#works">Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -76,14 +79,14 @@
 </header>
 
 <!-- hero area -->
-<section class="hero-area" id="parallax">
+<section class="section" id="home">
   <div class="container">
     <div class="row">
       <div class="col-lg-15 mx-auto">
-        <h4 class="text-white font-secondary">Hi, my name is</h4>
-        <h1 class="text-light font-tertiary">Diana Karpeev.</h1>
-        <h1 class="text-color font-tertiary" style="font-weight: bold; margin-bottom: 50px;">Nice to meet you! :-)</h1>
-        <p class="font-secondary paragraph-lg text-dark" style="text-align: start;">
+        <h4 class="text-white font-secondary transition" style="transition-delay: 100ms;">Hi, my name is</h4>
+        <h1 class="text-light font-tertiary transition" style="transition-delay: 200ms;">Diana Karpeev.</h1>
+        <h1 class="text-color font-tertiary transition" style="transition-delay: 300ms; margin-bottom: 50px;">Nice to meet you! :-)</h1>
+        <p class="font-secondary paragraph-lg text-dark transition" style="transition-delay: 400ms;">
           I'm a graduating Computer Science student at John Abbott College with a soft spot for art. 
           You'll often find me at hackathons, diving into challenges. 
           My heart lies in both programming and designing user interfaces. I love bringing creativity to code!
@@ -94,14 +97,14 @@
 </section>
 <!-- /hero area -->
 
-<!-- services -->
-<section class="section" id="competencies-section">
+<!-- skills -->
+<section class="section" id="skills">
   <div class="container">
     <div class="row">
       <div>
-        <h3 class="section-title">COMPETENCIES</h3>
+        <h3 class="section-title">SKILLS</h3>
       </div>
-      <div class="competencies-cards">
+      <div class="skills-cards">
         <div class="card hover-shadow shadow">
           <div class="card-body text-center px-4 py-5">
             <i class="ti-palette icon mb-5 d-inline-block"></i>
@@ -147,45 +150,49 @@
       </div>
     </div>
   </div>
-  <!-- client logo slider -->
-  <section class="section pb-0">
-    <div class="container">
-      <div class="logo-slider d-flex align-items-center">
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/html.webp" alt="HTML logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/css.png" alt="CSS logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/javascript.png" alt="Javascript logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/node-js.png" alt="Node.js logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/react.png" alt="React logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/kotlin.png" alt="Kotlin logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/jetpack-compose.png" alt="Jetpack Compose logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/python.png" alt="Python logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/sql.png" alt="SQL logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/git.png" alt="Git logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/net-core.png" alt=".NET Core logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/csharp.png" alt="C# logo"></a>
-        <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-            src="images/clients-logo/java.png" alt="Java logo"></a>
-      </div>
-    </div>
-  </section>
-<!-- /client logo slider -->
 </section>
-<!-- /services -->
+<!-- /skills -->
 
-<!-- blog -->
-<section class="section">
+<!-- logo slider -->
+<section class="section pb-0" id="technologies">
+  <div class="container">
+    <div>
+      <h3 class="section-title">TECHNOLOGIES</h3>
+    </div>
+    <div class="logo-slider d-flex align-items-center">
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/html.webp" alt="HTML logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/css.png" alt="CSS logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/javascript.png" alt="Javascript logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/node-js.png" alt="Node.js logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/react.png" alt="React logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/kotlin.png" alt="Kotlin logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/jetpack-compose.png" alt="Jetpack Compose logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/python.png" alt="Python logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/sql.png" alt="SQL logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/git.png" alt="Git logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/net-core.png" alt=".NET Core logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/csharp.png" alt="C# logo"></a>
+      <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/java.png" alt="Java logo"></a>
+    </div>
+  </div>
+</section>
+<!-- /client logo slider -->
+
+<!-- works -->
+<section class="section" id="works">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -230,10 +237,10 @@
     </div>
   </div>
 </section>
-<!-- /blog -->
+<!-- /works -->
 
 <!-- contact -->
-<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png" id="contact">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
@@ -262,26 +269,24 @@
 <!-- /contact -->
 
 <!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">+880 2544 658 256</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
-        </div>
+<footer class="section" id="footer">
+  <div class="container footer-container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5 class="text-light">Email</h5>
+        <p class="text-white paragraph-lg font-secondary">dianakarpeeva@gmail.com</p>
+      </div>
+      <div class="col-md-4">
+        <h5 class="text-light">Phone</h5>
+        <p class="text-white paragraph-lg font-secondary">(438) 227-3336</p>
+      </div>
+      <div class="col-md-4">
+        <h5 class="text-light">Location</h5>
+        <p class="text-white paragraph-lg font-secondary">Vaudreuil-Dorion, QC</p>
       </div>
     </div>
   </div>
-  <div class="border-top text-center border-dark py-5">
+  <div class="border-top text-center border-light py-5">
     <p class="mb-0 text-light">Copyright &copy;<script>
         var CurrentYear = new Date().getFullYear()
         document.write(CurrentYear)
